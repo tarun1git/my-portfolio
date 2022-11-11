@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarun Rajput Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/124b110f45.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,13 +15,15 @@
         <div class="container">
             <nav>
                 <img src="logo.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -39,26 +42,30 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I am Tarun Rajput, To work in a systematic and well organized manner. Seeking a challenging position
+                    <p>Hi, I am Tarun Rajput, To work in a systematic and well organized manner. Seeking a challenging
+                        position
                         in value driven Company that offers professional growth and ample opportunity to
                         learn and enrich my competencies and innovations in my profession.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('special assignments undertaken')">Special Assignments Undertaken</p>
+                        <p class="tab-links" onclick="opentab('special assignments undertaken')">Special Assignments
+                            Undertaken</p>
                         <p class="tab-links" onclick="opentab('academic credentials')">Academic Credentials</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br> Designing Web App interfaces</li>
                             <li><span>Frontend</span><br> HTML, CSS, Java Script</li>
-                            <li><span>No Code & Low Code Developer</span><br> Airtable, AppSmith, bubble.io, make(formerly Integromat), Zapier</li>
+                            <li><span>No Code & Low Code Developer</span><br> Airtable, AppSmith, bubble.io,
+                                make(formerly Integromat), Zapier</li>
                             <li><span>IT Services</span></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="special assignments undertaken">
                         <ul>
-                            <li><span>2015 to Current</span><br> Administrator at ENT Speech & Hearing Centre & Web Developer at KP Tech Consulting</li>
+                            <li><span>2015 to Current</span><br> Administrator at ENT Speech & Hearing Centre & Web
+                                Developer at KP Tech Consulting</li>
                             <li><span>2013 to 2015</span><br> Support and Admin Head at Unicom TechLabs Pvt. Ltd.</li>
                             <li><span>2009 to 2012</span><br> Sales Executive at Hari Travels Pvt. Ltd.</li>
                             <li><span>2008 to 2009</span><br> IT Services at SKV Deewan Hall School</li>
@@ -73,6 +80,51 @@
                             <li><span>2005</span><br> 10th from CBSE</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----services----- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Web Apps</h2>
+                    <p>A Web application (Web app) is an application program that is stored on a remote server and
+                        delivered over the Internet through a browser interface. Web services are Web apps by definition
+                        and many, although not all, websites contain Web apps.</p>
+                    <a
+                        href="https://www.techtarget.com/searchsoftwarequality/definition/Web-application-Web-app#:~:text=A%20Web%20application%20(Web%20app,all%2C%20websites%20contain%20Web%20apps.">Learn
+                        more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>NoCode & LowCode</h2>
+                    <p>There are a whole bunch of terms for software where the user doesn't necessarily need to write
+                        any code. These are sometimes called "no code" or "low code" platforms, and sometimes "visual"
+                        or "drag and drop" interfaces. Instead of writing lines of code, users can drag and drop
+                        “elements” or “components” to build user flows and apps, mainly for internal use of SME and for
+                        their clients.</p>
+                    <a
+                        href="https://www.sap.com/insights/what-is-low-code-no-code.html#:~:text=No%2Dcode%20is%20a%20method,a%20single%20line%20of%20code.">Learn
+                        more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>IT Services</h2>
+                    <p>IT services refers to the application of business and technical expertise to enable organizations
+                        in the creation, management and optimization of or access to information and business processes.
+
+                        The IT services market can be segmented by the type of skills that are employed to deliver the
+                        service (design, build, run). There are also different categories of service: business process
+                        services, application services and infrastructure services.
+
+                        If these services are outsourced, they are referred to as business process outsourcing (BPO),
+                        applications outsourcing (AO) and infrastructure outsourcing.</p>
+                    <a href="https://www.gartner.com/en/information-technology/glossary/it-services">Learn more</a>
                 </div>
             </div>
         </div>
