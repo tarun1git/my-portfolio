@@ -16,14 +16,14 @@
             <nav>
                 <img src="logo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -177,32 +177,31 @@
                     <p><i class="fas fa-mobile-screen-button"></i> +91-9711027959</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/tarun.raajpoot/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/tarun_raajput/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/tarun_raajput/?next=%2F"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href="https://twitter.com/TarunRajput7959"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/tarun-rajput-00655825/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/tarun-rajput-00655825/"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="Biodata.pdf" download class="btn btn2">Download Biodata</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="number" name="Number" placeholder="Your Phone Number" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
-        <p class="copyright">Made With <i class="fa fa-heart-o"></i> By Tarun Rajput</p>
+        <p class="copyright">copyright &copy; Made With <i class="fa fa-heart-o"></i> By Tarun Rajput</p>
     </div>
 
-
-
-
-
-
-
     <script src="app.js"></script>
+
 </body>
 
 </html>
