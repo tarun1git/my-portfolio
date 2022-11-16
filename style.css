@@ -22,6 +22,12 @@ body {
     background-position: center;
 }
 
+#header:hover {
+    background-image: url(bck.jpg);
+    transform: ();
+}
+
+
 .container {
     padding: 10px 10%;
 }
@@ -75,8 +81,9 @@ nav ul li a:hover:after {
     margin-top: 20px;
 }
 
-.header-text h1 span {
+.header-text h1 span:hover {
     color: #ff004f;
+    transform: translateY(-10px);
 }
 
 /* -------about------- */
